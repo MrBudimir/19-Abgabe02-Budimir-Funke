@@ -1,5 +1,11 @@
-    <project name="19-Abgabe02-Budimir-Funke">
+<project name="19-Abgabe02-Budimir-Funke">
     
-    <target name="init">
-        <mkdir dir="build-ant"/>
-    </target>
+  <target name="init">
+    <mkdir dir="build-ant"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="build-ant"/>
+  </target>
+
+</project>
