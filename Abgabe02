@@ -1,0 +1,25 @@
+#Aufgabe02 - für Protokoll
+
+#Maven
+mit mvn package .jar Datei erzeugt
+wurde im Ordner ./target gespeichert
+java -jar <Name>.jar <myName> damit wurde die Ausgabe "Hello <myName>" angezeigt
+
+Beim erzeugen einer jar werden mit Maven folgende Schritte durchlaufen:
+validate  
+compile
+test
+package
+
+#Manuelle Jar-Datei erzeugen
+Beim händischen erzeugen muss man einen Manifest-Datei anlegen mit folgenden inhalt:
+Manifest-Version1.0
+Main-class: at.fhj.iit.Main
+Die Datei wird benötigt für: "jar cfm [jarName.jar] Manifest.mf at/fhj/iit/Main.class"
+
+Aufwand ist deutlich höher als beim Befehl mvn package
+
+
+
+
+
