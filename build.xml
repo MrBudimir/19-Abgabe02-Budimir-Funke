@@ -2,10 +2,18 @@
     
   <target name="init">
     <mkdir dir="build-ant"/>
+    <mkdir dir="lib"/>
+    <mkdir dir="dist"/>
   </target>
 
   <target name="clean">
     <delete dir="build-ant"/>
+    <delete dir="lib"/>
+    <delete dir="dist"/>
+  </target>
+
+  <target name="compile" depends="clean, init">
+    <javac srcdir="src" destdir="build-ant" includeantruntime="false"/>
   </target>
 
 </project>
